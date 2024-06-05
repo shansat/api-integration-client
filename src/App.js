@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { AppBar, Toolbar, Typography, Container, Box, CircularProgress } from '@mui/material';
 import './App.css';
+import Footer from './navbar/Footer';
 
 function App() {
   const [message, setMessage] = useState('');
@@ -42,6 +43,7 @@ function App() {
           )}
         </Box>
       </Container>
+      <Footer />
     </div>
   );
 }
